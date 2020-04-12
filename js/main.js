@@ -15,7 +15,6 @@ function consulta_cep(){
             $("#localidade").html(response.localidade);
             $("#uf").html(response.uf);
             $("#tituloCep").html("CEP " + response.cep);
-            $(".cep").show();
             //$("#logradouro").html(response.logradouro);
             //document.getElementById("logradouro").innerHTML = response.logradouro;
             //alert(response)
@@ -24,5 +23,5 @@ function consulta_cep(){
 }
 
 $(function(){
-    $(".cep").hide
-})
+    $(".cep").hide();
+});
